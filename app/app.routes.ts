@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent }          from './home.component';
-import { EventsComponent } 	  from './events.component';
+import { EventsComponent }        from './events.component';
 import { CalendarComponent }      from './calendar.component';
 import { LabComponent }           from './lab.component';
 import { AboutComponent }         from './about.component';
@@ -11,6 +11,7 @@ import { SponsorsComponent }      from './sponsors.component';
 import { ContactComponent }       from './contact.component';
 import { ProjectsComponent }      from './projects.component';
 import { GetInvolvedComponent }   from './get-involved.component';
+import { MicromouseComponent }   from './micromouse.component';
 
 const appRoutes: Routes = [
   {
@@ -57,6 +58,10 @@ const appRoutes: Routes = [
   {
     path:'get-involved',
     component: GetInvolvedComponent
+  },
+  {
+    path:'micromouse',
+    component: MicromouseComponent
   }
 ];
 
@@ -77,7 +82,8 @@ const appRoutes: Routes = [
     SponsorsComponent,
     ContactComponent,
     ProjectsComponent,
-    GetInvolvedComponent
+    GetInvolvedComponent,
+    MicromouseComponent
   ]
 })
 export class AppRoutingModule {}

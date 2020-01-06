@@ -1,16 +1,20 @@
 .bodyDiv {
-    height: 100%;
+    /* height: 100%; */
     overflow-y: auto;
     background-color: #009FDA;
     width: auto;
+    margin-top: 65px;
+    /* overflow-x: initial !important; */
 }
 
 .fa {
-    color: #009FDA;
-    position: relative;
-    width: 35px;
-    left: .2rem;
-    font-size:2.1rem;
+  display: none;
+  color: #009FDA;
+  position: relative;
+  /* width: 35px; */
+  /* left: .2rem; */
+  font-size:2.1rem;
+  top: .4rem;
 }
 
 .li.navCon:hover {
@@ -29,7 +33,8 @@
 
 .navCon {
     display: inline-block;
-    padding: 10px 15px;
+    vertical-align: middle;
+    padding: 0px 0px;
 }
 
 #navArea {
@@ -43,10 +48,14 @@
     margin-bottom: 0;
 }
 
+.sidenav {
+  background: #006599;
+}
+
 @media screen and (max-width: 450px) {
     .navCon {
         padding: 10px 21px;
-	bottom: 1rem;
+        bottom: 1rem;
     }
 
     #navArea {
@@ -69,12 +78,8 @@
       text-align: left;
       margin: 0;
       position: absolute;
-      left: 0.1rem;
-      top: 0.6rem;
-    }
-
-    .fa {
-        left: -0.7rem;
+      left: .1rem;
+      top: .6rem;
     }
 
     #mobile-title {
@@ -113,7 +118,7 @@
     }
 
     .navWrapper .description {
-      position:relative;
+      /* position: relative; */
       display:table-cell;
       vertical-align:middle;
       width:120px;
@@ -125,6 +130,22 @@
       position:relative;
       display:table;
     }
+
+    .description {
+      float: unset;
+      font-size: 1rem;
+    }
+
+    .sidenav {
+      min-width: 5em;
+    }
+}
+
+@media screen and (max-width: 992px) {
+  div.description.brand-logo.left {
+    right: 0 !important;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 451px) {
@@ -133,9 +154,10 @@
     }
     .navCon {
         display: block;
-        padding: 10px 10px;
+        padding: 0px 0px;
         text-align: center;
         bottom: 1rem;
+        width: 6.5rem;
     }
     #navArea {
         position: static;
@@ -176,14 +198,13 @@
 
     }
 
-    .navWrapper .description {
-      position:relative;
-      display:table-cell;
+    .description {
+      /* position:relative; */
+      display: inline;
       vertical-align:middle;
-      width:190px;
-      left: 3rem;
-      text-align: left;
-      font-size: 1.07rem;
+      font-size: 1rem;
+      float: unset !important;
+      color: #009fd9;
     }
 
     .navWrapper li:hover {
@@ -194,4 +215,21 @@
     .mobile-toggle {
       display: none;
     }
+
+    nav ul a {
+      padding: 0;
+      color: #009fd9;
+    }
+}
+
+.arrow {
+  position: absolute;
+  padding-left: 0.2em;
+  padding-top: 1px;
+}
+
+.dropdown-extend {
+  position: relative;
+  background:#006599;
+  bottom:2px;
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+declare var M:any;
 
 @Component({
   selector: 'my-app',
@@ -12,8 +13,20 @@ export class AppComponent {
   title = 'IEEE at UCI';  // Create banner image later
 
   toggleNavbar = false;
+  dropdown = false;
 
   ontoggleNavbar() {
     this.toggleNavbar = !this.toggleNavbar;
+  }
+
+  onDropdown() {
+    this.dropdown = !this.dropdown;
+  }
+
+  ngAfterContentInit() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems, {
+        edge: 'left'
+      });
   }
 }

@@ -53,6 +53,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1500px) {
+  .container {
+    margin: 50px auto 50px !important;
+  }
+}
+
 .logo-wrapper {
   display: block;
   z-index: 4;
@@ -78,14 +84,54 @@ body {
 .slider,
 .slides,
 li {
-  height: 100vh !important;
-}
-
-.slider .slides img {
-  opacity: 0.6;
+  /* height: 91vh !important; */
 }
 
 .slides .caption {
   top: unset !important;
   bottom: 10% !important;
+}
+
+.container {
+    width: auto;
+    margin: 50px 5vw 50px;
+    background-color: #fff;
+    padding: 0 20px 20px;
+    border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+        -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+        -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.075);
+    text-align: center;
+}
+
+.topc {
+    margin-top: 130px;
+}
+
+.slider .slides li img {
+    background-size: auto 30rem;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    object-fit: contain;
+}
+
+.ul .li {
+  background: transparent;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+    color: #666;
+    text-align: center;
 }
